@@ -1,0 +1,110 @@
+*{
+  text-decoration: none;
+}
+.navbar{
+  background: crimson; font-family: calibri; padding-right: 15px;padding-left: 15px;
+}
+.navdiv{
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+  font-size: 35px; font-weight: 600; color: white;
+}
+li{
+  list-style: none; display: inline-block;
+}
+li a{
+  color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+button{
+  background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+}
+button a{
+  color: white; font-weight: bold; font-size: 15px;
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+
+
+/* mouse over link */
+a:hover {
+  color: rgb(10, 4, 7);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* Button Container */
+.button {
+display: inline-block;
+position: relative;
+padding: 0.5em 1em;
+border: none;
+background-color: transparent;
+color: #ffffff;
+font-family: Arial, sans-serif;
+font-size: 16px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+outline: none;
+transition: background-color 0.3s ease;
+}
+
+/* Button Default State */
+.button {
+border-radius: 4px;
+background-color: #ffffff;
+color: #333333;
+border: 1px solid #cccccc;
+}
+
+/* Button Hover State */
+.button:hover {
+background-color: #f5f5f5;
+}
+
+/* Button Active State */
+.button:active {
+background-color: #e0e0e0;
+border-color: #999999;
+}
+
+/* Button Focus State */
+.button:focus {
+box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Disabled State */
+.button:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+/* Button Icon */
+.button .icon {
+display: inline-block;
+vertical-align: middle;
+margin-right: 0.5em;
+}
+
+/* Button Text */
+.button .text {
+display: inline-block;
+vertical-align: middle;
+}
+
+/* Button Sizes */
+.button.small {
+padding: 0.3em 0.6em;
+font-size: 14px;
+}
+
+.button.large {
+padding: 0.8em 1.6em;
+font-size: 18px;
+}

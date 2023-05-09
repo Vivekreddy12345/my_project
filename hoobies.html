@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="inculde.js"></script>
+  <title>My Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .accordin {
+  background-color: #6306ee;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #5bc261;
+}
+
+.accordin:after {
+  content: '\25BC';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25B2";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow:hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFFFF0;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="background-color: rgb(161, 76, 76);">My Hobbies</h1>
+  </header>
+  
+  <main>
+<div>
+  <button class="accordin"><b>Watching Anime</b></button>
+  <div class="content">
+    <h3>I made it a habbit of watching anime since I was a Kid.</h3>
+  </div>
+</div>
+<div>
+  <button class="accordin"><b>Travelling</b></button>
+  <div class="content">
+    <h3>I Would Love to Travel to new places with my friends.</h3>
+  </div>
+</div>
+<div>
+  <button class="accordin"><b>Technology</b></button>
+  <div class="content">
+    <h3>I have a great interst for Technologies, Since I had my bachelors in <abbr title="Computer Science And Engineering">CSE</abbr>. I have also worked on few projects in my college. Check them out-<a href="https://github.com/Vivekreddy12345">here</a></h3>
+  </div>
+</div>
+
+
+  </main>
+  <div style="text-align: left;">
+    <a href="home.html">go back</a>
+  </div>
+  
+  
+</body>
+<footer style="text-align: bottom;">
+  &copy; 2023 My Home Page. All rights reserved.
+</footer>
+<script>
+var coll = document.getElementsByClassName("accordin");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</html>
